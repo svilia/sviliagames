@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Status | SviliaHckTeam</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Svilia<span>HckTeam</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="tools.html" class="nav-link">Tools</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="status.html" class="nav-link active">Status</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Sistem & <span>Altyapı Durumu</span></h1>
+
+        <div class="status-grid">
+            <div class="status-list">
+                <div class="status-item">
+                    <div>
+                        <h3 style="font-size: 1.1rem;">Official GitHub Repositories</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Açık kaynak kod erişim hatları</p>
+                    </div>
+                    <div class="status-indicator"><span class="dot"></span> Operational</div>
+                </div>
+
+                <div class="status-item">
+                    <div>
+                        <h3 style="font-size: 1.1rem;">Svilia-Cipher CLI Module</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Paket yükleme ve hash doğrulama kanalı</p>
+                    </div>
+                    <div class="status-indicator"><span class="dot"></span> Operational</div>
+                </div>
+
+                <div class="status-item">
+                    <div>
+                        <h3 style="font-size: 1.1rem;">Svilia-Nexus Central Hub</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Merkezi veri senkronizasyon altyapısı</p>
+                    </div>
+                    <div class="status-indicator"><span class="dot" style="background:#f1c40f; box-shadow:0 0 10px #f1c40f;"></span> Maintenance</div>
+                </div>
+            </div>
+
+            <div class="incident-log">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Son Güncellemeler</h3>
+                <div style="font-family: monospace; font-size: 0.85rem; line-height: 1.8;">
+                    <div style="color: var(--primary-color);">[2026-06-01]</div>
+                    <p style="color: var(--text-muted); margin-bottom: 1rem;">Svilia-Nmap parser güncellemesi yayınlandı, tüm sistemler kararlı.</p>
+                    
+                    <div style="color: var(--primary-color);">[2026-05-15]</div>
+                    <p style="color: var(--text-muted);">Nexus ana modülü planlı bakıma alındı.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>SviliaHckTeam © 2026</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
