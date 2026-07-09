@@ -448,3 +448,542 @@ font-size:62px;
 font-weight:800;
 
 }
+/* ======================================================
+   ABOUT
+====================================================== */
+
+.about{
+
+background:#050505;
+
+}
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1.2fr .8fr;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.about h2{
+
+font-size:60px;
+
+margin-bottom:30px;
+
+}
+
+.about p{
+
+font-size:19px;
+
+color:#bdbdbd;
+
+margin-bottom:20px;
+
+}
+
+.about-image{
+
+overflow:hidden;
+
+border:1px solid #1d1d1d;
+
+}
+
+.about-image img{
+
+transition:.7s;
+
+}
+
+.about-image:hover img{
+
+transform:scale(1.06);
+
+}
+
+/* ======================================================
+   GAMES
+====================================================== */
+
+.games{
+
+background:#000;
+
+}
+
+.games-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+.game-card{
+
+background:#0b0b0b;
+
+border:1px solid #222;
+
+overflow:hidden;
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.game-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#fff;
+
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.game-card img{
+
+height:320px;
+
+width:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.game-card:hover img{
+
+transform:scale(1.05);
+
+}
+
+.game-info{
+
+padding:35px;
+
+}
+
+.game-info span{
+
+font-size:13px;
+
+color:#888;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+}
+
+.game-info h3{
+
+margin-top:10px;
+
+font-size:36px;
+
+}
+
+.game-info p{
+
+margin:20px 0;
+
+color:#b8b8b8;
+
+}
+
+.game-link{
+
+display:inline-block;
+
+padding-bottom:4px;
+
+border-bottom:1px solid #fff;
+
+}
+
+/* ======================================================
+   FEATURES
+====================================================== */
+
+.features{
+
+background:#050505;
+
+}
+
+.features-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+}
+
+.feature{
+
+padding:50px;
+
+border:1px solid #242424;
+
+transition:.35s;
+
+}
+
+.feature:hover{
+
+background:#fff;
+
+color:#000;
+
+transform:translateY(-6px);
+
+}
+
+.feature h3{
+
+font-size:28px;
+
+margin-bottom:20px;
+
+}
+
+.feature p{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+/* ======================================================
+   GALLERY
+====================================================== */
+
+.gallery{
+
+background:#000;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:18px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+transition:.45s;
+
+cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+filter:brightness(.8);
+
+}
+
+/* ======================================================
+   ROADMAP
+====================================================== */
+
+.roadmap{
+
+background:#050505;
+
+}
+
+.timeline{
+
+display:grid;
+
+grid-template-columns:repeat(6,1fr);
+
+gap:18px;
+
+margin-top:60px;
+
+}
+
+.timeline div{
+
+padding:35px;
+
+border:1px solid #2a2a2a;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.timeline div:hover{
+
+background:white;
+
+color:black;
+
+transform:translateY(-8px);
+
+}
+
+/* ======================================================
+   NEWS
+====================================================== */
+
+.news{
+
+background:#000;
+
+}
+
+.news-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.news-card{
+
+padding:40px;
+
+border:1px solid #222;
+
+transition:.35s;
+
+background:#0a0a0a;
+
+}
+
+.news-card:hover{
+
+border-color:white;
+
+transform:translateY(-8px);
+
+}
+
+.news-card span{
+
+font-size:12px;
+
+color:#888;
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+
+}
+
+.news-card h3{
+
+margin:20px 0;
+
+font-size:30px;
+
+}
+
+.news-card p{
+
+color:#bfbfbf;
+
+margin-bottom:25px;
+
+}
+
+/* ======================================================
+   STATS
+====================================================== */
+
+.stats{
+
+background:#050505;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+text-align:center;
+
+}
+
+.stat{
+
+padding:45px;
+
+border:1px solid #222;
+
+}
+
+.stat h2{
+
+font-size:70px;
+
+margin-bottom:10px;
+
+}
+
+.stat p{
+
+color:#bdbdbd;
+
+letter-spacing:2px;
+
+}
+
+/* ======================================================
+   CONTACT
+====================================================== */
+
+.contact{
+
+text-align:center;
+
+background:#000;
+
+}
+
+.contact h2{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.contact p{
+
+color:#bdbdbd;
+
+margin-bottom:35px;
+
+}
+
+.contact a{
+
+font-size:22px;
+
+border-bottom:1px solid white;
+
+padding-bottom:5px;
+
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+footer{
+
+background:#050505;
+
+padding:70px 0;
+
+border-top:1px solid #1d1d1d;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:2fr 1fr 1fr 1fr;
+
+gap:40px;
+
+}
+
+.footer-logo img{
+
+width:50px;
+
+margin-bottom:20px;
+
+}
+
+.footer-title{
+
+font-size:20px;
+
+margin-bottom:20px;
+
+}
+
+.footer-links{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.footer-links a{
+
+color:#a8a8a8;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#fff;
+
+}
+
+.copyright{
+
+margin-top:60px;
+
+padding-top:30px;
+
+border-top:1px solid #1d1d1d;
+
+text-align:center;
+
+color:#777;
+
+font-size:14px;
+
+}
