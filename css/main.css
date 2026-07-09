@@ -1,0 +1,563 @@
+/* =========================
+   SVILIA GAMES STUDIO
+   MAIN STYLE
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#000;
+    color:#fff;
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#000;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#fff;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#bdbdbd;
+}
+
+/* Loader */
+
+#loader{
+
+    position:fixed;
+
+    width:100%;
+    height:100vh;
+
+    background:#000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:.7s;
+
+}
+
+.loader-logo img{
+
+    width:90px;
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(.9);
+opacity:.5;
+}
+
+50%{
+transform:scale(1);
+opacity:1;
+}
+
+100%{
+transform:scale(.9);
+opacity:.5;
+}
+
+}
+
+/* NAVBAR */
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    padding:25px 70px;
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(0,0,0,.35);
+
+    z-index:1000;
+
+}
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo img{
+
+width:48px;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:45px;
+
+list-style:none;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:.95rem;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+opacity:.6;
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.75)),
+url("../assets/hero.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+transform:scale(1.05);
+
+animation:zoomHero 25s linear infinite;
+
+}
+
+@keyframes zoomHero{
+
+0%{
+transform:scale(1.05);
+}
+
+50%{
+transform:scale(1.12);
+}
+
+100%{
+transform:scale(1.05);
+}
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+max-width:900px;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:95px;
+
+font-weight:800;
+
+letter-spacing:18px;
+
+}
+
+.hero h2{
+
+margin-top:15px;
+
+font-size:30px;
+
+font-weight:300;
+
+letter-spacing:5px;
+
+}
+
+.hero p{
+
+margin-top:35px;
+
+font-size:18px;
+
+color:#d4d4d4;
+
+max-width:700px;
+
+margin-inline:auto;
+
+}
+
+.button{
+
+display:inline-block;
+
+margin-top:55px;
+
+padding:18px 45px;
+
+border:1px solid white;
+
+text-decoration:none;
+
+color:white;
+
+transition:.35s;
+
+}
+
+.button:hover{
+
+background:white;
+
+color:black;
+
+}
+
+/* SECTIONS */
+
+section{
+
+padding:130px 9%;
+
+}
+
+.container{
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+/* ABOUT */
+
+.about h2{
+
+font-size:60px;
+
+margin-bottom:40px;
+
+}
+
+.about p{
+
+font-size:20px;
+
+color:#cfcfcf;
+
+max-width:900px;
+
+}
+
+/* GAMES */
+
+.games h2{
+
+font-size:55px;
+
+margin-bottom:70px;
+
+}
+
+.game-card{
+
+background:#111;
+
+border:1px solid #2b2b2b;
+
+display:flex;
+
+overflow:hidden;
+
+transition:.35s;
+
+}
+
+.game-card:hover{
+
+transform:translateY(-8px);
+
+border-color:white;
+
+}
+
+.game-card img{
+
+width:520px;
+
+height:320px;
+
+object-fit:cover;
+
+}
+
+.info{
+
+padding:50px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+.info h3{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.info p{
+
+color:#bfbfbf;
+
+margin-bottom:35px;
+
+}
+
+.info a{
+
+text-decoration:none;
+
+color:white;
+
+border-bottom:1px solid white;
+
+width:max-content;
+
+}
+
+/* FEATURES */
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.feature{
+
+padding:60px;
+
+border:1px solid #262626;
+
+transition:.3s;
+
+}
+
+.feature:hover{
+
+background:#fff;
+
+color:#000;
+
+}
+
+/* ROADMAP */
+
+.timeline{
+
+display:grid;
+
+grid-template-columns:repeat(6,1fr);
+
+margin-top:70px;
+
+gap:15px;
+
+}
+
+.timeline div{
+
+padding:30px;
+
+border:1px solid #2a2a2a;
+
+text-align:center;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+text-align:center;
+
+}
+
+.contact h2{
+
+font-size:60px;
+
+}
+
+.contact p{
+
+margin:25px 0;
+
+color:#c7c7c7;
+
+}
+
+.contact a{
+
+font-size:22px;
+
+color:white;
+
+text-decoration:none;
+
+}
+
+/* FOOTER */
+
+footer{
+
+padding:50px;
+
+border-top:1px solid #1b1b1b;
+
+text-align:center;
+
+color:#888;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.hero h1{
+
+font-size:60px;
+
+letter-spacing:10px;
+
+}
+
+.game-card{
+
+flex-direction:column;
+
+}
+
+.game-card img{
+
+width:100%;
+
+}
+
+.features{
+
+grid-template-columns:1fr;
+
+}
+
+.timeline{
+
+grid-template-columns:1fr;
+}
+
+nav ul{
+
+display:none;
+
+}
+
+header{
+
+padding:20px 30px;
+
+}
+
+}
